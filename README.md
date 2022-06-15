@@ -56,3 +56,4 @@ $(document).ready(function() {
 //When you come across websites, you'll often see this line of code, but another way of doing exactly the same
 //thing is simply to include all scripts at the end of our website and in the right order.
 ```
+[ready() Method](https://api.jquery.com/ready/)
