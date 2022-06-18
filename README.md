@@ -67,3 +67,4 @@ By minifying we get rid of those things and make our website load much faster
 Exercies: Use minifier.org to minfying the drum js file.
 ```
 [Minify](https://minifier.org/)
+[JavaScript Minifier](https://www.toptal.com/developers/javascript-minifier)
