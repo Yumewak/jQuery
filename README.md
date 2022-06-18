@@ -76,7 +76,59 @@ First we select our element in our web page in order to manipulate it
 ```
 ```javascript
 // Vanilla JavaScript
-document.querySelector("h1")
+document.querySelector("h1");
 // jQuery
-$
+$("h1"); //Using jQuery method to select h1
+
+// Vanilla JavaScript
+document.querySelector("button");
+// jQuery
+$("button");
+
+// Vanilla Javascript
+document.querySelector("h1").style.color="red";
+// jQuery
+$("h1").css("color", "red");
+
+//Get the current value
+console.log($("h1").css("color"));
+console.log($("h1").css("font-size"));
+```
+```
+Remember. With this css method, if you have a single property in, then you're getting the value of it.
+And if you have two properties in it, then you're setting the value
+```
+### Separation of conserns
+```
+Separate our conserns
+1.- Keep our javascript code all about behavior
+2.- Keep our style code all about the appearence
+3.- Keep our HTML all about content
+```
+```css
+/* For the next examples use this styles inside your styles file: */
+.big-title {
+    font-size: 10rem;
+    color: yellow;
+    font-family: cursive;
+}
+
+.margin-50 {
+    margin: 50px;
+}
+```
+```javascript
+//Use jQuery to add a class
+$("h1").addClass("big-title");
+//Use jQuery to remove a class
+$("h1").removeClass("big-title");
+//Use jQuery to toggle a class
+$("h1").toggleClass("big-title");
+
+// Add or remove multiple classes
+$("h1").addClass("big-title margin-50");
+// All we need to do is just to include them inside the same set of quotation marks but with a spaces in between
+
+// See whether or not if our element has a particular class
+$("h1").hasClass("margin-50");
 ```
