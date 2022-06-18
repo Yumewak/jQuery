@@ -57,3 +57,13 @@ $(document).ready(function() {
 //thing is simply to include all scripts at the end of our website and in the right order.
 ```
 [ready() Method](https://api.jquery.com/ready/)
+
+## How minification works
+```
+Minified version it's javascript code where all of the spaces, the new lines and the comments
+have been removed from the file to try and reduce its size.
+By minifying we get rid of those things and make our website load much faster
+
+Exercies: Use minifier.org to minfying the drum js file.
+```
+[Minify](https://minifier.org/)
