@@ -68,3 +68,15 @@ Exercies: Use minifier.org to minfying the drum js file.
 ```
 [Minify](https://minifier.org/)
 [JavaScript Minifier](https://www.toptal.com/developers/javascript-minifier)
+
+## Selecting elements with jQuery
+```
+Manipulating styles with jQuery
+First we select our element in our web page in order to manipulate it
+```
+```javascript
+// Vanilla JavaScript
+document.querySelector("h1")
+// jQuery
+$
+```
