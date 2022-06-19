@@ -98,6 +98,7 @@ console.log($("h1").css("font-size"));
 Remember. With this css method, if you have a single property in, then you're getting the value of it.
 And if you have two properties in it, then you're setting the value
 ```
+
 ### Separation of conserns
 ```
 Separate our conserns
@@ -131,4 +132,17 @@ $("h1").addClass("big-title margin-50");
 
 // See whether or not if our element has a particular class
 $("h1").hasClass("margin-50");
+```
+
+## Manipulating text with jQueri
+```javascript
+.text()
+$("h1").text("Bye")//This will change the text in the h1 element
+console.log($("h1").text())//This will get the text of the h1 element
+
+$("button").text("Don't Click Me")//This will change the text in every single button
+console.log($("button").text())//This will get the text of every single button
+
+//The .html() method works similar to InnerHTML in the DOM
+$("button").html("<em>Don't Click Me</em>") //This will insert an <em> tag like the InnerHTML
 ```
