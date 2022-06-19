@@ -134,7 +134,7 @@ $("h1").addClass("big-title margin-50");
 $("h1").hasClass("margin-50");
 ```
 
-## Manipulating text with jQueri
+## Manipulating text with jQuery
 ```javascript
 .text()
 $("h1").text("Bye")//This will change the text in the h1 element
@@ -145,4 +145,32 @@ console.log($("button").text())//This will get the text of every single button
 
 //The .html() method works similar to InnerHTML in the DOM
 $("button").html("<em>Don't Click Me</em>") //This will insert an <em> tag like the InnerHTML
+```
+
+## Manipulatin attributes with jQuery
+```html
+<! -- Use the following HTML code to practice this lesson in your jQuery folder -->
+    <h1 class="big-title margin-50">Hello.</h1>
+    <img src="drum.png" alt="">
+    <a href="https://www.google.com">Search</a>
+```
+```
+If we wanted to be able to get and set these attributes on the fly using JavaScript and jQuery
+we can do it whit the folloing code
+```
+```javascript
+//To get attribute attr("attribute name")
+console.log($("img").attr("src"));//This will get the value of the attribute
+
+//To get and set attribute attr("attribute name", "attribute set it")
+$("a").attr("href", "https://yahoo.com");//This will get the value and set it to yahoo
+```
+```
+If there is a second input then we're going to set it to that input
+And if there isn't one then we're going to get the value of the attribute
+```
+```javascript
+//Remember, a class is also an HTML attribute
+//Write in your console
+$("h1").attr("class")
 ```
