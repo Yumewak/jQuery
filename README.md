@@ -174,3 +174,67 @@ And if there isn't one then we're going to get the value of the attribute
 //Write in your console
 $("h1").attr("class")
 ```
+
+## Adding event listener siwth jQuery
+```html
+<--! For this subject add an input -->
+    <input type="text">
+```
+```javascript
+//Vanilla JavaScript
+document.querySelector("h1").addEventListener("click", function(){
+    document.querySelector("h1").style.color="purple";
+});
+//jQuery
+$("h1").click(function(){
+    $("h1").css("color", "purple");
+});
+```
+```javascript
+// Previously if we wanted to add an event listener to all five buttons we had to write a for loop, but with jQuery its not necessary
+//Vanilla JavaScript
+for (let i = 0; i < 5; i++) {
+    document.querySelectorAll("button")[i].addEventListener("click", function(){
+        document.querySelector("h1").style.color="red";
+    });    
+}
+//jQuery
+$("button").click(function(){
+    $("h1").css("color", "purple")
+});
+```
+```javascript
+//Keypress event addEventListener
+$("input").keypress(function(event){ //keydown also works
+    console.log(event.key)
+});
+//This is similar to add an event listener to the entire web page like "document.addEventListener("keydown", function (event)..."
+$(document).keypress(function(event){
+    console.log(event.key)
+});
+//Another way to add an event listener to the entire web page
+$("body").keypress(function(event){
+    console.log(event.key)
+});
+```
+```
+Challenge: Update the code that we wrote just now so that whenever your press a key inside our web site
+it gets show inside the h1
+```
+```javascript
+// Challenge vanilla JavaScript
+document.addEventListener("keydown", function(event){
+    document.querySelector("h1").textContent=event.key;
+})
+// Challenge jQuery
+$(document).keypress(function(event){
+    $("h1").text(event.key)
+});
+```
+```javascript
+//Method on() takes two parameters, the first one is the event that you're looking to listen for
+//and the second parameter is going to be usually the callback function
+$("h1").on("mouseover", function(){
+    $("h1").css("color", "purple");
+})
+```
