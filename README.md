@@ -238,3 +238,27 @@ $("h1").on("mouseover", function(){
     $("h1").css("color", "purple");
 })
 ```
+
+## Adding and removing elements with jQuery
+```javascript
+//Inside the parentheses you can put down the HTML that you want to add before the h1 (for example)
+//before()
+//after()
+//prepend()
+//append()
+
+//Before method
+$("h1").before("<button>New</button>");
+//After method
+$("h1").after("<button>New</button>");
+//Prepend and append method
+//The difference between prepend and before is that prepend will add your new HTML element into the item that you've selected just after the opening tag
+$("h1").prepend("<button>New</button>");
+$("h1").append("<button>New</button>");
+
+//Do this in your console and inspect the "New" buttons created, see that its been added inside the h1
+
+//Remove method
+//Select the element that you want to remove and use the "remove()" method
+$("button").remove()
+```
