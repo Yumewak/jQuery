@@ -175,7 +175,7 @@ And if there isn't one then we're going to get the value of the attribute
 $("h1").attr("class")
 ```
 
-## Adding event listener siwth jQuery
+## Adding event listener with jQuery
 ```html
 <--! For this subject add an input -->
     <input type="text">
