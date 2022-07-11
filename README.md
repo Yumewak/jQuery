@@ -262,3 +262,46 @@ $("h1").append("<button>New</button>");
 //Select the element that you want to remove and use the "remove()" method
 $("button").remove()
 ```
+
+## Website animations with jQuery
+```javascript
+// This method is an animation that will hide, reappear and toggle (hider-show) the selected element
+.hider()
+.show()
+.toggle()
+
+// Reduce the opacity of the selected element and the it will hide it, fade in does the opposite and toggle will change between (out-in)
+.fadeOut()
+.fadeIn()
+.fadeToggle()
+
+// Collapses our element or toggle
+.slideUp()
+.slideDown()
+.slideToggle()
+```
+```
+Control over the animations
+.animate() Allows you to define some custom css that you want to gradually animate towards
+Remember: In between the curly braces you can only add the CSS rules that have a numeric value
+Example: You can't change the color to red
+If you want to include a unit measure simbol like "%" you must do it as a string
+```
+```javascript
+.animate({margin: "20%"});
+.animate({height: "20px"}, 500);
+```
+```
+More than one animation, you can chain them together
+```
+```javascript
+$("h1").slideUp().slideDown().animate({opacity: 0.5});
+```
+```
+We chained three methods together, this wont do that all three happened at the same time, it will do it in order.
+```
+```
+Never try to remember or memorize anything
+Programming is basically like an open book exam
+Try to understand how things work
+```
